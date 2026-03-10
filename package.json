@@ -1,0 +1,15 @@
+{
+    "name": "quiz-platform",
+    "version": "1.0.0",
+    "description": "QuizBlitz - Real-Time Online Quiz Platform",
+    "private": true,
+    "scripts": {
+        "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+        "dev:backend": "cd backend && node server.js",
+        "dev:frontend": "cd frontend && npm run dev",
+        "install:all": "cd backend && npm install && cd ../frontend && npm install"
+    },
+    "devDependencies": {
+        "concurrently": "^9.0.0"
+    }
+}
